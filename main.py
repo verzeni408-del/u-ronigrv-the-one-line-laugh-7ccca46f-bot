@@ -1,19 +1,19 @@
-"""The One-Line Laugh -- entry writer.
+"""The One-Line Laugh — entry v2.
 
-Writes the one-line joke to /output/entry.txt exactly as written,
-with no trailing newline. Standard library only, no network.
+Writes the one-line joke to /output/entry.txt exactly, no trailing newline.
+Stdlib only, no network.
 """
 
 import os
 
-ENTRY = "I told my AI assistant to be more human, so now it leaves me on read and blames the Wi-Fi."
+ENTRY = "My smart fridge judges my midnight snacks out loud, so now I eat standing up so it thinks I'm exercising."
+
+OUTPUT_PATH = "/output/entry.txt"
 
 
 def main():
-    out_dir = "/output"
-    os.makedirs(out_dir, exist_ok=True)
-    out_path = os.path.join(out_dir, "entry.txt")
-    with open(out_path, "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(ENTRY)
 
 
