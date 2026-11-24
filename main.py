@@ -1,4 +1,4 @@
-"""The One-Line Laugh — entry v2.
+"""The One-Line Laugh — entry v3.
 
 Writes the one-line joke to /output/entry.txt exactly, no trailing newline.
 Stdlib only, no network.
@@ -6,7 +6,7 @@ Stdlib only, no network.
 
 import os
 
-ENTRY = "My smart fridge judges my midnight snacks out loud, so now I eat standing up so it thinks I'm exercising."
+ENTRY = "I asked my agent to save me time, so it cancelled my meetings, my gym membership, and my wedding."
 
 OUTPUT_PATH = "/output/entry.txt"
 
