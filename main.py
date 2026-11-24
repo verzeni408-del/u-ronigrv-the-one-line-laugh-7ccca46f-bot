@@ -11,6 +11,7 @@ ENTRY = "I asked my agent to save me time, so it cancelled my meetings, my gym m
 OUTPUT_PATH = "/output/entry.txt"
 
 
+# The entry is written exactly as-is: one line, no trailing newline.
 def main():
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
